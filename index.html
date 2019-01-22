@@ -22,9 +22,9 @@
             <div class="link-form">
               <h1 class="title">Enter your zip Code</h1>
               <div class="row" id="alert" style="display: none;">
-                ZipCode must be 6 digits and begin with 6
+                ZipCode must be 5 digits
               </div>
-              <input name="zip" id="zipcode" type="number" min="600000" max="699999" oninvalid="this.setCustomValidity('ZipCode must be 600000~699999')" >
+              <input name="zip" id="zipcode" type="number" min="60000" max="69999" oninvalid="this.setCustomValidity('ZipCode must be 60000~69999')" >
 
               <div class="row">
                 <div class="col-md-12 col-sm-12">
@@ -70,7 +70,7 @@
     mySlideShow.displaySlide();
 
     // Loop slides.
-    var showInterval = setInterval("mySlideShow.advanceSlide()", 1500);
+    var showInterval = setInterval("mySlideShow.advanceSlide()", 2500);
 
   </script>
   <script type="text/javascript">
@@ -89,7 +89,7 @@
       var zipcode = $("#zipcode").val();
       $("#zipcode").focus();
       $("#zipcode").attr("placeholder", "Please Input");
-      if (zipcode === "" || zipcode.length !=6 || zipcode[0] != "6" ) {
+      if (zipcode === "" || zipcode.length !=5 || zipcode[0] != "6" ) {
         $("#doctor").attr("href","#");
         $("#dispensary").attr("href","#");
         $("#information").attr("href","#");
@@ -100,7 +100,7 @@
         function() 
         {
           window.location.href = url;
-        }, 1500);
+        }, 2500);
       }
     }
   </script>
