@@ -7,15 +7,25 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript">
+		(function(o){var b="https://api.autopilothq.com/anywhere/",t="0ded4db56296415887f7cc761eaf475c869a5226b2d64dbb99bf5766f20e2431",a=window.AutopilotAnywhere={_runQueue:[],run:function(){this._runQueue.push(arguments);}},c=encodeURIComponent,s="SCRIPT",d=document,l=d.getElementsByTagName(s)[0],p="t="+c(d.title||"")+"&u="+c(d.location.href||"")+"&r="+c(d.referrer||""),j="text/javascript",z,y;if(!window.Autopilot) window.Autopilot=a;if(o.app) p="devmode=true&"+p;z=function(src,asy){var e=d.createElement(s);e.src=src;e.type=j;e.async=asy;l.parentNode.insertBefore(e,l);};y=function(){z(b+t+'?'+p,true);};if(window.attachEvent){window.attachEvent("onload",y);}else{window.addEventListener("load",y,false);}})({});
+	</script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-4628695-13"></script>
+	<script type="text/javascript">
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-4628695-13');
+	</script>
 </head>
 <body>
 	<ul class="slideshow">
 	  <li><span>Image 01</span></li>
 	  <li><span>Image 02</span></li>
 	  <li><span>Image 03</span></li>
-	  <li><span>Image 04</span></li>
+<!--	  <li><span>Image 04</span></li>
 	  <li><span>Image 05</span></li>
-	  <li><span>Image 06</span></li>
+-->	  <li><span>Image 06</span></li>
 	</ul>
 	<div class="container">
     	<div class="logo">
@@ -43,16 +53,6 @@
 	<div class="footer">
 		(c)2019 The Patient Alliance, NFP. Chicago, IL. All rights reserved.
 	</div>
-	<script type="text/javascript">
-		(function(o){var b="https://api.autopilothq.com/anywhere/",t="0ded4db56296415887f7cc761eaf475c869a5226b2d64dbb99bf5766f20e2431",a=window.AutopilotAnywhere={_runQueue:[],run:function(){this._runQueue.push(arguments);}},c=encodeURIComponent,s="SCRIPT",d=document,l=d.getElementsByTagName(s)[0],p="t="+c(d.title||"")+"&u="+c(d.location.href||"")+"&r="+c(d.referrer||""),j="text/javascript",z,y;if(!window.Autopilot) window.Autopilot=a;if(o.app) p="devmode=true&"+p;z=function(src,asy){var e=d.createElement(s);e.src=src;e.type=j;e.async=asy;l.parentNode.insertBefore(e,l);};y=function(){z(b+t+'?'+p,true);};if(window.attachEvent){window.attachEvent("onload",y);}else{window.addEventListener("load",y,false);}})({});
-	</script>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-4628695-13"></script>
-	<script type="text/javascript">
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-4628695-13');
-	</script>
 	<script type="text/javascript">
 		function checkZipCode(url) {
 		  
