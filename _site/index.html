@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MMDR8KW');</script>
-<!-- End Google Tag Manager -->
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -15,20 +8,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link href="css/main.css" rel="stylesheet">
-  <script>
-  fbq('track', 'CompleteRegistration', {
-    value: 10,
-    currency: 'usd',
-  });
-</script>
-<script type="text/javascript">(function(o){var b="https://instantfox.co/anywhere/",t="0ded4db56296415887f7cc761eaf475c869a5226b2d64dbb99bf5766f20e2431",a=window.AutopilotAnywhere={_runQueue:[],run:function(){this._runQueue.push(arguments);}},c=encodeURIComponent,s="SCRIPT",d=document,l=d.getElementsByTagName(s)[0],p="t="+c(d.title||"")+"&u="+c(d.location.href||"")+"&r="+c(d.referrer||""),j="text/javascript",z,y;if(!window.Autopilot) window.Autopilot=a;if(o.app) p="devmode=true&"+p;z=function(src,asy){var e=d.createElement(s);e.src=src;e.type=j;e.async=asy;l.parentNode.insertBefore(e,l);};y=function(){z(b+t+'?'+p,true);};if(window.attachEvent){window.attachEvent("onload",y);}else{window.addEventListener("load",y,false);}})({});</script>
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMDR8KW"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->  <div class="wrapper">
+  <div class="wrapper">
     <div class="text-wrapper">
       <div class="cover-body">
         <div class="cover-body-inner">
@@ -37,29 +20,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <img src="./img/logo.png">  
             </div>
             <div class="link-form">
-
-<form
-  action="https://formspree.io/xonzpojm"
-  method="POST"
->
-  <label>
               <h1 class="title">Enter your email <br>for a $50 Dispensary Coupon </h1>
+              <form  action="https://formspree.io/xonzpojm" method="POST" id="capture">
+                <input type="email" name="email" id="email" required placeholder="Input your Email">
+              </form>
 
-
-    <input type="text" name="_replyto">
-  </label>
-  <button class="link-button" type="submit">Register My Coupon</button>
-</form>
               <div class="row">
                 <div class="col-md-12 col-sm-12">
                   <div class="class-md-4 col-sm-4">
-                    <a id="doctor" href="http://drconsalter.com/?utm_source=fb&utm_campaign=feb"><button class="link-button" onclick="checkZipCode('http://drconsalter.com/?utm_source=fb&utm_campaign=feb')" >I need a Doctor</button></a>
+                    <a id="doctor" href=""><button type="submit" form="capture" class="link-button" onclick="return checkEmail('http://drconsalter.com/?utm_source=fb&utm_campaign=feb')" >I need a Doctor</button></a>
                   </div>
                   <div class="class-md-4 col-sm-4">
-                    <a id="dispensary" href="https://dispensary33.com/?utm_source=fb&utm_campaign=feb"><button class="link-button" onclick="checkZipCode('https://dispensary33.com/?utm_source=fb&utm_campaign=feb')">I need a Dispensary</button></a>
+                    <a id="dispensary" href=""><button type="submit" form="capture" class="link-button" onclick="return checkEmail('https://dispensary33.com/?utm_source=fb&utm_campaign=feb')">I need a Dispensary</button></a>
                   </div>
                   <div class="class-md-4 col-sm-4">
-                    <a id="information" href="http://chicagocannabis.org/?utm_source=fb&utm_campaign=feb"><button class="link-button" onclick=" checkZipCode('http://chicagocannabis.org/?utm_source=fb&utm_campaign=feb')">I need Information</button></a>
+                    <a id="information" href=""><button type="submit" form="capture" class="link-button" onclick="return checkEmail('http://chicagocannabis.org/?utm_source=fb&utm_campaign=feb')">I need Information</button></a>
                   </div>
                 </div>
               </div>
@@ -94,7 +69,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     mySlideShow.displaySlide();
 
     // Loop slides.
-    var showInterval = setInterval("mySlideShow.advanceSlide()", 2500);
+    var showInterval = setInterval("mySlideShow.advanceSlide()", 3000);
 
   </script>
   <script type="text/javascript">
@@ -108,23 +83,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     gtag('config', 'UA-4628695-13');
   </script>
   <script type="text/javascript">
-    function checkZipCode(url) {
-      
-      var zipcode = $("#zipcode").val();
-      $("#zipcode").focus();
-      $("#zipcode").attr("placeholder", "Please Input");
-      if (zipcode === "" || zipcode.length !=5 || zipcode[0] != "6" ) {
-        $("#doctor").attr("href","http://drconsalter.com/?utm_source=fb&utm_campaign=feb");
-        $("#dispensary").attr("href","http://dispensary33.com/?utm_source=fb&utm_campaign=feb");
-        $("#information").attr("href","http://chicagocannabis.org/?utm_source=fb&utm_campaign=feb");
-        $("#alert").attr("style","display:block");
+    $("capture").submit(function(){
+  alert("Submitted");
+});
+
+    function checkEmail(url) {
+      var email = $("#email").val();
+      $("#email").focus();
+      if (email === "" ) {
+        $("#doctor").attr("href","#");
+        $("#dispensary").attr("href","#");
+        $("#information").attr("href","#");
       } else {
         $("#alert").attr("style","display:none");
         setTimeout(
         function() 
         {
           window.location.href = url;
-        }, 2500);
+        }, 1000);
       }
     }
   </script>
