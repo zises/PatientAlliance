@@ -41,18 +41,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <h1 class="title">Enter your email <br>for a $50 Dispensary Coupon </h1>
               <form  action="https://formspree.io/xonzpojm" method="POST" id="capture">
                 <input type="email" name="email" id="email" required placeholder="Input your Email">
+                <input type="hidden" name="_next" id="next" value=""/>
               </form>
 
               <div class="row">
                 <div class="col-md-12 col-sm-12">
                   <div class="class-md-4 col-sm-4">
-                    <a id="doctor" ><button type="submit" form="capture" class="link-button" onclick="return checkEmail('http://drconsalter.com/?utm_source=fb&utm_campaign=feb')" >I need a Doctor</button></a>
+                    <a id="doctor"><button type="submit" form="capture" class="link-button" onclick="return checkEmail('http://drconsalter.com/?utm_source=fb&utm_campaign=feb')" >I need a Doctor</button></a>
                   </div>
                   <div class="class-md-4 col-sm-4">
-                    <a id="dispensary" ><button type="submit" form="capture" class="link-button" onclick="return checkEmail('https://dispensary33.com/?utm_source=fb&utm_campaign=feb')">I need a Dispensary</button></a>
+                    <a id="dispensary"><button type="submit" form="capture" class="link-button" onclick="return checkEmail('https://dispensary33.com/?utm_source=fb&utm_campaign=feb')">I need a Dispensary</button></a>
                   </div>
                   <div class="class-md-4 col-sm-4">
-                    <a id="information" ><button type="submit" form="capture" class="link-button" onclick="return checkEmail('http://chicagocannabis.org/?utm_source=fb&utm_campaign=feb')">I need Information</button></a>
+                    <a id="information"><button type="submit" form="capture" class="link-button" onclick="return checkEmail('http://chicagocannabis.org/?utm_source=fb&utm_campaign=feb')">I need Information</button></a>
                   </div>
                 </div>
               </div>
@@ -101,6 +102,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     gtag('config', 'UA-4628695-13');
   </script>
   <script type="text/javascript">
+    
+
     function checkEmail(url) {
       var email = $("#email").val();
       $("#email").focus();
@@ -109,11 +112,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         $("#dispensary").attr("href","#");
         $("#information").attr("href","#");
       } else {
-        setTimeout(
-        function() 
-        {
-          window.location.href = url;
-        }, 100);
+          $("#next").val(url);
       }
     }
   </script>
